@@ -1,0 +1,12 @@
+.example-card {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.example-header-image {
+    background-image: url("http://loremflickr.com/300/300?random=4");
+    background-size: cover;
+}

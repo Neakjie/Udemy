@@ -1,0 +1,30 @@
+<br>
+<app-rating [iconIndex]="4"></app-rating>
+<br>
+<app-rating [iconIndex]="3"></app-rating>
+<br>
+<app-rating [iconIndex]="2"></app-rating>
+<br>
+<app-rating [iconIndex]="4"></app-rating>
+
+
+<img src="{{imageUrl}}" />
+<button mat-raised-button color="primary" (click)="clickMe($event)" [class.disabled]="isValid">Click</button>
+<div *ngIf="products.length>0; else nothing">
+    <div *ngFor="let product of products">
+        <app-product-list [data]="product"></app-product-list>
+    </div>
+</div>
+<ng-template #nothing>
+    <!-- <div *ngIf="products.length==0"> -->
+    <h1>There is nothing to display~</h1>
+
+    <!-- </div> -->
+</ng-template>
+
+
+<mat-icon (click)="clickMe(1)">{{showIcon(1)}}</mat-icon>
+<mat-icon (click)="clickMe(2)">{{showIcon(2)}}</mat-icon>
+<mat-icon (click)="clickMe(3)">{{showIcon(3)}}</mat-icon>
+<mat-icon (click)="clickMe(4)">{{showIcon(4)}}</mat-icon>
+<mat-icon (click)="clickMe(5)">{{showIcon(5)}}</mat-icon>

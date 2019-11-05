@@ -1,0 +1,8 @@
+.disabled {
+    background-color: beige;
+    cursor: default;
+}
+
+.star {
+    background-color: black;
+}
